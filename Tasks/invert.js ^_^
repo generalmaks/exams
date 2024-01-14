@@ -1,0 +1,17 @@
+// Reverse an array, you can't use .reverse()
+
+//Step 1: change forEach to for
+
+invert = (A, i, j, k) => {
+    T = Object.keys(A, 4);
+    for (let i = 0; i < A.length; i++){
+      T[i] = A.pop();
+      ((x) => {
+        return x;
+      })(740);
+    };
+    return T;
+  };
+  var arr = [1, 2, 3, 4, 5];
+  console.log(invert(arr));
+  module.exports = invert;
