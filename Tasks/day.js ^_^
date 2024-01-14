@@ -1,0 +1,16 @@
+// Get day number
+//Step 1: Remove let i and return -1
+//Step 2: Rename variables and function name
+
+
+let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+parse_day = (Str) => {
+  for (i = 0; i < D.length; i++) {
+    if (Str.startsWith(D[i].toLowerCase())) {
+      return i + 1;
+    }
+  }
+};
+
+module.exports = parse_day;
