@@ -1,23 +1,24 @@
 // Count words in a string
 //Step 1: Remove useless code
+//Step 2: Rename variables and function
 
-Words = function (s) {
-  number_of_words_in_s = 0;
+wordsCount = function (String) {
+  wordsInString = 0;
   flag = false;
-  for (c of s) {
+  for (char of String) {
     if (!flag) {
-      if (c !== ' ') {
+      if (char !== ' ') {
         flag = true;
-        number_of_words_in_s++;
+        wordsInString++;
       }
     } else {
-      if (c === ' ') {
+      if (char === ' ') {
         flag = false;
       }
     }
   }
-  return number_of_words_in_s;
+  return wordsInString;
 };
 
-
-module.exports = Words;
+console.log(wordsCount("a a a a a a bb b"));
+module.exports = wordsCount;
