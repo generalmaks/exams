@@ -1,5 +1,5 @@
 // Get day number
-//Step 1: Remove let i and return -1
+//Step 1: Remove let i
 //Step 2: Rename variables and function name
 
 
@@ -11,6 +11,8 @@ parseDay = (Str) => {
       return i + 1;
     }
   }
+    return -1;
 };
+
 
 module.exports = parseDay;
