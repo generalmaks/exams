@@ -1,19 +1,15 @@
 // Validate person name
+//Step 1: Rename variables
+//Step 2: Rewrite code to not look that ugly
 
-const isValidate = (T) => {
-  if (!T) return false;
-  if (T === '') return false;
-  if (typeof T !== 'string') return false;
-  if (T.length === 0) return false;
-  if (!T.includes(' ')) return false;
+const isValidName = (name) => {
+  if(!name || typeof name !== 'string' || name.length === 0 || name === '' || !name.includes(' ')){
+    return false
+  }
   {
-    for (C of T) {
-      if (C === ' ') continue;
-      if (
-        C.toLowerCase().charCodeAt(0) >= 97 &&
-        C.toLowerCase().charCodeAt(0) <= 122
-      ) {
-      } else {
+    for (char of name) {
+      if (char === ' ') continue;
+      if (char.toLowerCase().charCodeAt(0) < 97 || char.toLowerCase().charCodeAt(0) > 122) {
         return false;
       }
     }
