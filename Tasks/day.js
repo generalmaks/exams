@@ -13,4 +13,4 @@ parseDay = (Str) => {
   }
 };
 
-module.exports = parse_day;
+module.exports = parseDay;
