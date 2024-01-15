@@ -17,4 +17,4 @@ const isValidName = (name) => {
   }
 };
 
-module.exports = isValidate;
+module.exports = isValidName;
